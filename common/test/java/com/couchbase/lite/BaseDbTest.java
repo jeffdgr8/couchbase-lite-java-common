@@ -298,7 +298,7 @@ public abstract class BaseDbTest extends BaseTest {
         assertEquals(JSONObject.class, jArray.get(26).getClass());
     }
 
-    @SuppressWarnings("UnnecessaryBoxing")
+    @SuppressWarnings({"UnnecessaryBoxing", "RedundantCast"})
     protected final void verifyArray(@Nullable ArrayInterface array) {
         assertNotNull(array);
 
